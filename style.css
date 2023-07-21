@@ -1,0 +1,16 @@
+* {
+    font-family: gill sans, sans-serif;
+  }
+
+.attention {
+    text-transform: uppercase;
+}
+
+a:hover {
+    color:rgb(96, 210, 255);
+
+}
+
+a:visited {
+    color: purple;
+}
