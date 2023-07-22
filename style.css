@@ -1,0 +1,95 @@
+*   {
+  box-sizing: border-box;
+}
+
+p {
+    padding: 15px;
+    }
+  
+  body {
+       background: linear-gradient(120deg, #9DDDFD, #8D4DD6);
+      font-family: "gill sans", sans-serif;
+    }
+  
+  .attention {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  
+  #relaunch {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+  }
+  
+.eyes {
+  display: inline-block;
+}
+
+  .logoMain {
+    height: 200px;
+    width: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    border: 3px solid black;
+    border-radius: 100px;
+    margin: 0 auto;
+    box-sizing: container-box;
+    position: relative;
+    display: inline;
+  }
+  
+  nav {
+  text-align: center;
+  margin: 0 auto;
+  }
+  
+  .menu a {
+    position: relative;
+    display: inline;
+  }
+
+  .basicInfo a {
+    padding: 20px 0px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .basicInfo p {
+    text-align: justify;
+  }
+
+  .intro {
+    text-align: justify;
+    width: 600px;
+    margin: 0 auto;
+  }
+  
+  a:hover {
+      color:rgb(96, 210, 255);
+  
+  }
+  
+  a:visited {
+      color: purple;
+  }
+  
+  .footerLinks  {
+    border: 3px solid Black;
+    padding: 20px 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .footerLinks a:hover  {
+    background: clear;
+    border: 2px solid black;
+    color: lightblue;
+  }
+  
