@@ -3,93 +3,116 @@
 }
 
 p {
-    padding: 15px;
-    }
-  
-  body {
-       background: linear-gradient(120deg, #9DDDFD, #8D4DD6);
-      font-family: "gill sans", sans-serif;
-    }
-  
-  .attention {
-    color: white;
-    background-color: black;
-    padding: 5px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 100%;
-  }
-  
-  #relaunch {
-    color: white;
-    background-color: black;
-    padding: 5px;
-    text-align: center;
-  }
-  
-.eyes {
-  display: inline-block;
+  padding: 15px;
 }
-
-  .logoMain {
-    height: 200px;
-    width: 200px;
-    max-width: 200px;
-    max-height: 200px;
-    border: 3px solid black;
-    border-radius: 100px;
-    margin: 0 auto;
-    box-sizing: container-box;
-    position: relative;
-    display: inline;
-  }
   
-  nav {
+body {
+  background: linear-gradient(120deg, #9DDDFD, #8D4DD6);
+  font-family: "gill sans", sans-serif;
+}
+  
+.attention {
+  color: white;
+  background-color: black;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+  
+.relaunch {
+  color: white;
+  background-color: black;
+  padding: 5px;
   text-align: center;
   margin: 0 auto;
-  }
-  
-  .menu a {
-    position: relative;
-    display: inline;
-  }
+  top: 0;
+}
 
-  .basicInfo a {
-    padding: 20px 0px;
+header  {
+  background: beige;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 230px;
+
+}
+
+nav {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  right: 80px;
+}
+
+.logoMain {
+  height: 160px;
+  width: 160px;
+  max-width: 200px;
+  max-height: 200px;
+  border: 2px solid black;
+  border-radius: 80px;
+  margin: 0 auto;
+  position: relative;
+  top: 40px;
+  display: inline;
+  overflow: hidden;
+}
+  
+nav li {
+  position: relative;
+  bottom: 40px;
+  left: 20px;
+  display: inline;
+  padding: 10px 15px;
+}
+
+.basicInfo {
+    padding: 20px 20px;
     position: relative;
+    left: 340px;
     text-align: center;
     display: inline-block;
-  }
-
-  .basicInfo p {
-    text-align: justify;
-  }
-
-  .intro {
-    text-align: justify;
-    width: 600px;
+    background: beige;
+    width: 400px;
+    height: 500px;
     margin: 0 auto;
+    overflow: hidden;
+}
+.basicInfo p {
+ 
+    text-align: justify;
   }
+
+
+.intro {
+  text-align: justify;
+  width: 600px;
+  margin: 0 auto;
+}
   
-  a:hover {
-      color:rgb(96, 210, 255);
+a:hover {
+  color:rgb(96, 210, 255);
+}
   
-  }
+a:visited {
+  color: purple;
+}
   
-  a:visited {
-      color: purple;
-  }
-  
-  .footerLinks  {
-    border: 3px solid Black;
-    padding: 20px 0px;
-    position: relative;
-    text-align: center;
-    width: 100%;
-  }
-  .footerLinks a:hover  {
-    background: clear;
-    border: 2px solid black;
-    color: lightblue;
-  }
-  
+.footerLinks  {
+  border: 3px solid Black;
+  padding: 20px 0px;
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footerLinks a:hover  {
+  background: clear;
+  border: 2px solid black;
+  color: lightblue;
+}
