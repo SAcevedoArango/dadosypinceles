@@ -1,0 +1,56 @@
+*   {
+    font-family: "Helvetica", sans-serif;
+}
+
+header h1   {
+    background: url(./media/pattern.jpeg);
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    color: khaki;
+    position: relative;
+    top: 0;
+}
+
+
+/*.pattern    {
+    height: 110px;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1000%, 1000%);
+    max-width: 500px;
+    max-height: 10px;
+    z-index: -10;
+    position: absolute;
+    top: 130px;
+    left: 600px;
+} */
+
+.brushes    {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background: mediumspringgreen;
+    width: 100%;
+}
+
+.frames    {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background: lightcoral;
+    width: 100%;
+}
+
+.paint    {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background: skyblue;
+    width: 100%;
+}
+
+.price  {
+    font-weight: bold;
+    color: blue;
+}

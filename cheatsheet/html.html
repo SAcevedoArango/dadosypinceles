@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>HTML Cheatsheet</title>
+      <link href="./styles/style.css" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+        <div class="languages">
+          <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./html.html">HTML</a>
+            <a href="./css.html">CSS</a>
+            <a href="./js.html">JavaScript</a>
+          </nav>  
+        </div>
+      </header>
+      <main>
+        <div class="intro" id="indexhtml">
+            <h1>HTML 5</h1>
+            <h2>Hoja de trucos del lenguaje armazón</h2>
+        </div>
+        <div class="menuhtml">
+          <h5>Índice</h5>
+          <nav>
+            <ol>
+              <a href="#meanings" ><li>Definiciones</li></a>
+              <a href="#fundamentals" ><li>Fundamentos</li></a>
+              <a href="#tables" ><li>Tablas</li></a>
+              <a href="#Formas" ><li>Formas</li></a>
+              <a href="#semantic" ><li>HTML Semántico</li></a>
+              <a href="#goodpractice" ><li>Buenas prácticas</li></a>
+            </ol>
+          </nav>  
+        </div>
+        <h3 id="meanings">Definiciones</h3>
+        <span class="buttonindexhtml"><a href="#indexhtml"><h3 >índice</h3></a></span>
+        <section class="meanings">
+          <article>
+            <h6>¿Qué es HTML?</h6>
+            <p>HTML significa <em>HyperText Markup Language</em>. Esta definición puede ser partida en tres partes, "Language" que significa lenguaje, "Hypertext" que se refiere a que este lenguaje es capaz de generar enlaces entre distintos elementos, y "Markup" se refiere a la capacidad de este lenguaje de dar formato u orden a un documento. En pocas palabras, es el lenguaje básico que estructura una página web, su esqueleto. </p>
+          </article>
+        </section>  
+        <section class="meanings">
+          <article>
+            <h6>¿Qué es un lenguaje de programación?</h6>
+            <p>Los lenguajes de programación son muy similares a los humanos, eso es, en función y estructura. Ambos son utilizados para darnos a entender con el interlocutor, solo que en el caso de la programación, ese interlocutor es una computadora, y no solo queremos que nos escuche, queremos darle órdenes y que esta al mismo tiempo nos de una respuesta.<br/><br/>En un principio, los lenguajes de programación eran muy complejos, pues las máquinas entienden a travé sde algo conocido como código binario. Hablar código binario (solo utilizando 0s y 1s) es en teoría posible, pero supondría un esfuerzo tan abismal, que simplemente no valdría la pena. Para optimizar la comunicación se einventaron los lenguajes de programación, primero los de <em>bajo nivel</em> y luego de los de <em>alto nivel</em>, estos últimos son los más parecidos al lenguaje humano, y aunque distan más de las máquinas que los de bajo nivel, son lo único que necesitan los programadores del mundo moderno que no se especialicen en un nicho específico. Así pues, cuando le hablas a tu computadora con un lenguaje de programación de alto nivel, una serie de procesos computacionales convierten ese lenguaje a código binario a través de varias traducciones (interpretación), pero eso es tema que ahora no nos importa mucho.</p>
+          </article>
+      </section>
+              <section class="meanings">
+          <article>
+            <h6>¿Qué es Front-end?</h6>
+            <p>El Front-end se refiere a la interfaz con la que un usuario puede interactuar a la hora de acceder a un sitio web o aplicación determinada. El desarrollo front end conlleva un conocimiento integral de varios lenguajes de programación, entre los que destacan HTML, CSS y JavaScript, también es necesario tener conocimiento de complementos, librerías o frameworks que amplian las funcionalidades de los lenguajes previamente mencionados.</p>
+          </article>
+        </section>
+        <section class="meanings">
+          <article>
+            <h6>Elementos, Etiquetas y Contenido</h6>
+            <p>En HTML, llamamos <strong>elemento</strong> a la únidad de código más sencilla que se le puedo instruir al procesador, es decir, la computadora no entenderá una horden que no sea por lo menos un elemento. Un elemento se compone de varias partes, una <strong>etiqueta de apertura</strong> y una <strong>etiqueta de cierre</strong>, y entre ambas etiquetas irá el <strong>contenido</strong>. No todos los elementos tienen contenido, y no todos los elementos tienen etiqueta de cierre, sin embargo, esa es la estructura básica que compone un comando. A continuación encontrarás algunos ejemplos de elementos.</p>
+            <img src="./media/html/meanings/element.png"/ style="position: relative; margin: 0 auto; left: 40px;">
+          </article>
+        </section>
+        <section class="meanings">
+          <article>
+            <h6>Indentación</h6>
+            <p>La indentación es el espacio en blanco que hay desde el inicio de una línea de código, hasta el primer elemento de código en esa línea. Esto genera una apariencia estructurada o escalonada, que aparte de dar orden, permite definir relaciones jerárquicas entre elementos.</p>
+          </article>
+        </section>
+        <section class="meanings">
+          <article>
+            <h6>Anidamiento</h6>
+            <p>En HTML, llamamos <strong>anidamiento</strong> a la relación jerárquica que se establece entre una serie de elementos que van conteniendo a otros. Es decir, puedo tener una imagen (<strong>&ltimg&gt</strong>) contenida dentro de un parrafo(<strong>&ltp&gt&lt/p&gt</strong>), el parrafo puede ir contenido dentro de un numeral (<strong>&ltli&gt&lt/li&gt</strong>) dentro de una lista ordenada (<strong>&ltol&gt&lt/ol&gt</strong>), y la lista ordenada puede ir contenida dentro de un artículo (<strong>&ltarticle&gt&lt/article&gt</strong>), el cuál a su vez puede estar contenido en una sección única de la página (<strong>&ltsection&gt&lt/section&gt</strong>). Ejemplo:</p>
+            <section class="examplecode">
+              <p>&ltsection&gt<br/>&nbsp;&nbsp;&ltarticle&gt<br/>&nbsp;&nbsp;&nbsp;&nbsp;&ltol&gt<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltp&gt&ltimg/&gt&lt/p&gt<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt<br/>&nbsp;&nbsp;&nbsp;&nbsp;&ltol&gt<br/>&nbsp;&nbsp;&ltarticle&gt<br/>&ltsection&gt</p>
+            </section>
+            <p>Cuando un elemento está anidado dentro de otro, se dice que es hijo de este, además todos los hijos de un elemento determinado ("p" es hijo de "li", "li" es hijo de "ol", y así sucesivamente). El anidamiento permite aplicar reglas de forma selectiva o generalizada dependiendo del nivel sobre el que quieras aplicar alguna característica. En neustro ejemplo, aplicar una regla a "section" afectará a todos los elementos anidados en él. Por convención, deben haber dos espacios de indentación entre hijo y madre. Recuerda cerrar primero los elementos hijos que los padres.</p>
+          </article>
+        </section>
+        <section class="meanings">
+          <article>
+            <h6>Atributos</h6>
+            <p>Los atributos son modificadores de elementos, al utilizarlos estamos brindando información adicional acerca del elemento. Sirven para dar identidad o estilo. Se colocan siempre adentro de la etiqueta de apertura, y sigue una estructura con [nombre del atributo]="[valor del atributo]". Un elemento puede tener más de un atributo, para lo cual se separa con espacios. Adicionalmente un mismo atributo puede tener más de un valor, el cuál suele separarse con ; (el último valor no lleva punto y coma).</p>
+            <section class="examplecode">
+              <p>&lt[elemento] [atributo]="[valor]"&gt[contenido]&lt/[elemento]&gt</p>
+            </section>
+          </article>
+        </section>
+        <h3 id="fundamentals">Fundamentos</h3>
+        <span class="buttonindexhtml"><a href="#indexhtml"><h3 >índice</h3></a></span>
+        <section class="meanings">
+          <article>
+            <h6>Anatomía de un documento HTML</h6>
+            <p>Si bien existen incontables posibilidades con HTML, todo documento HTML debe tener unos elementos y orden esenciales. Estos elementos son:
+              <ol>
+                <li><strong style="background-color: hsla(222, 19%, 27%, 1)";>&ltDOCTYPE html&gt</strong> es la declaración de documento, va al comienzo del archivo y le dice al navegador web que este archivo está escrito en HTML 5.</li>
+                <li><strong style="background-color: hsla(222, 19%, 27%, 1)">&lthtml&gt&lt/html&gt</strong> Define los límites del contenido HTML, va justo después de la declaración del documento.</li>
+                <li><strong style="background-color: hsla(222, 19%, 27%, 1)">&lthead&gt&lt/head&gt</strong> Limita el encabezado del documento, aquí se insertará información meta de la página, no evidente para el usuario, pero que afecta la presentación.</li>
+                <li><strong style="background-color: hsla(222, 19%, 27%, 1)">&ltbody&gt&lt/body&gt</strong> En esta sección se insertará el ~99% del código. Será adentro del elemento "body" que colocaremos la información que presentaremos al usuario.</li>
+              </ol>
+            </p>
+            <section class="examplecode">
+              <p></p>
+            </section>
+            <p></p>
+          </article>
+        </section>
+        <section class="meanings">
+          <article>
+            <h6>ELEMENTO: html y head</h6>
+            <p>&lthtml&gt&lt/html&gt encierra todo el contenido de la página. También se conoce como elemento raíz. Adentro de este colocaremos "head" y "body". Adentro del elemento "head" colocaremos las siguientes etiquetas:
+              <ol>
+                <li><strong style="background-color: hsla(222, 19%, 27%, 1)">&lttitle&gtHTML Cheatsheet&lt/title&gt</strong> Le dice al navegador que mostrar como título en la ventana del navegador o de la pestaña.</li>
+                <li><strong style="background-color: hsla(222, 19%, 27%, 1)">&ltmeta [atributos]/&gt</strong> Este elemento presenta metadatos, datos que describen datos. El ejemplo más útil es el del atributo charset="UTF-8", que permite utilizar todos los carácteres en la página. Esta etiqueta es de cierre automático, es decir que la etiqueta de apertura también es la de cierre.</li>
+              </ol>
+            </p>
+          </article>
+        </section>
+        <section class="meanings">
+          <article>
+            <h6>ELEMENTO: header, main, footer, div, y span</h6>
+            <p>Todos estos elementos van adentro de "body", y sirven como contenedores, dominarlos es esencial para tener un manejo correcto de los espacios y presentación del sitio web:
+              <ol>
+                <li><strong style="background-color: hsla(222, 19%, 27%, 1)">&ltheader&gt[contenido]&lt/header&gt</strong> Elemento semántico que le dice al navegador que esa es la parte superior de la página. Aquí suele incluirse el menú de navegación, buscadores, el logo del sitio web y/o una corta presentación del sitio.</li>
+                <li><strong style="background-color: hsla(222, 19%, 27%, 1)">&ltmain&gt[contenido]&lt/main&gt</strong> Elemento semántico que contiene el cuerpo principal de la página.</li>
+                <li><strong style="background-color: hsla(222, 19%, 27%, 1)">&ltfooter&gt[contenido]&lt/footer&gt</strong> Elemento semántico que contiene el pie de la página. Aquí suele ponerse la información de contacto, información de derechos, etc.</li>
+                <li><strong style="background-color: hsla(222, 19%, 27%, 1)">&ltdiv&gt[contenido]&lt/div&gt</strong> Elemento no semántico genérico de bloque. Antes se utilizaba para lo mismo que "header", "main", "footer".</li>
+                <li><strong style="background-color: hsla(222, 19%, 27%, 1)">&ltspan&gt[contenido]&lt/span&gt</strong> Elemento no semántico genérico de línea. Es igual que "div", pero para líneas. Útil para contener segmentos de una línea a la que le alicaremos atributos diferentes a las del resto de la línea.</li>
+              </ol>
+            </p>
+          </article>
+        </section>
+        <section class="meanings">
+          <article>
+            <h6>ELEMENTO: h1-h6</h6>
+            <p>El elemento de encabezado tiene 6 versiones diferentes, enumeradas desde h1 hasta h6, siendo h1 un encabezado de mayor relevancia que el encabezado h2, y el h2 más que el h3, y así sucesivamente. Sirve para definir títulos o llamar la atención, su estructura es la siguiente:<br/></p>
+              <section class="examplecode">
+                <p>&lth1&gt Esto es un encabezado h1 &lt/h1&gt<br/>&lth3&gt Esto es un encabezado h3 &lt/h3&gt</p>
+              </section>
+               <p><h1 style="background-color: hsla(11, 57%, 62%, 1); text-align: center">Esto es un encabezado h1</h1></p>
+               <p><h3 style="background-color: hsla(11, 57%, 62%, 1); text-align: center">Esto es un encabezado h3</h3></p>
+          </article>
+        </section>
+        <section class="meanings">
+          <article>
+            <h6>ELEMENTO: p</h6>
+            <p>El elemento p sirve para crear párrafos. Utiliza una etiqueta de apertura y de cierre.</p>
+              <section class="examplecode">
+                <p>&ltp&gt Esto es un párrafo de prueba &lt/p&gt</p>
+              </section>
+            <p style="text-align: center">Esto es un párrafo de prueba</li>
+            </ul>
+          </article>
+        </section>
+        <section class="meanings">
+          <article>
+            <h6>ELEMENTO: p</h6>
+            <p>El elemento p sirve para crear párrafos. Utiliza una etiqueta de apertura y de cierre.</p>
+              <section class="examplecode">
+                <p>&ltp&gt Esto es un párrafo de prueba &lt/p&gt</p>
+              </section>
+            <p style="text-align: center">Esto es un párrafo de prueba</li>
+            </ul>
+          </article>
+        </section>
+      </main>
+      <footer>
+        <div class="who">
+          <h4>Santiago Acevedo Arango</h4>
+          <p>Soy un estudiante de programación que comenzó como neófito en julio de 2023. Mi meta es convertirme en un programador senior dentro de alguna compañía reconocida, manteniendo siempre un espíritu jr., con hambre de conocimiento y pasión por aprender.</p>
+        </div>
+      </footer>
+    </body>
+</html>
